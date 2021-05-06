@@ -25,9 +25,6 @@
 
     <div id="container">
       <h2>LEOPARD</h2>
-     
-       
-      
       <p>
         1. Most leopards are light coloured and have dark spots on their fur.
         These spots are called “rosettes” because their shape is similar to that
@@ -53,7 +50,7 @@
       <img
           class="img-center" 
          id="leopard"
-      onmousemove="setNewLeopard(),playSound('soundObj')"
+      onmousemove="setNewLeopard(),playAudio('soundObj')"
         onmouseout="setOldLeopard(),pauseAudio('soundObj')"
         src="img/brownField.jpg">
         
@@ -111,10 +108,12 @@
       <img
         class="img-center"
         id="lion"
-        onmousemove="setNewImage()"
-        onmouseout="setOldImage()"
-        src="img/BROWN LION.jpg"
-      /><br />
+        onmousemove="setNewImage(),playAudio('soundObj1')"
+        onmouseout="setOldImage(),pauseAudio('soundObj1')"
+        src="img/BROWN LION.jpg">
+         <audio id="soundObj1" src="img/lionroar.WAV"></audio>
+      <br />
+
      
       <p>
         4. LIONS ARE BIG EATERS
@@ -167,10 +166,11 @@
       <img
         class="img-center"
         id="elephant"
-        onmousemove="setNewElephant()"
-        onmouseout="setOldElephant()"
-        src="https://cdn.pixabay.com/photo/2017/12/21/04/54/elephant-3031112_960_720.jpg"
-      /><br />
+        onmousemove="setNewElephant(),playAudio('soundObj2')"
+        onmouseout="setOldElephant(),pauseAudio('soundObj2')"
+        src="https://cdn.pixabay.com/photo/2017/12/21/04/54/elephant-3031112_960_720.jpg">
+         <audio id="soundObj2" src="img/ELEPHANT.WAV"></audio>
+      <br />
 
      
       <p>
@@ -226,10 +226,11 @@
       <img
         class="img-center"
         id="buffalo"
-        onmousemove="setNewBuffalo()"
-        onmouseout="setOldBuffalo()"
-        src="https://images.pexels.com/photos/6052992/pexels-photo-6052992.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      /><br />
+        onmousemove="setNewBuffalo(),playAudio('soundObj3')"
+        onmouseout="setOldBuffalo(),pauseAudio('soundObj3')"
+        src="https://images.pexels.com/photos/6052992/pexels-photo-6052992.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+       <audio id="soundObj3" src="img/Buffalo.mp3"></audio>  
+      <br />
      
       <p>
         4. BREEDING
@@ -293,10 +294,12 @@
       <img
         class="img-center"
         id="rhino"
-        onmousemove="setNewRhino()"
-        onmouseout="setOldRhino()"
+        onmousemove="setNewRhino(),playAudio('soundObj4')"
+        onmouseout="setOldRhino(),pauseAudio('soundObj4')"
         src="https://cdn.pixabay.com/photo/2013/02/27/14/50/africa-86621_960_720.jpg"
-      /><br />
+      />
+       <audio id="soundObj4" src="img/Rhinoceros.wav"></audio>  
+      <br />
       <p>
     4. RHINOS HAVE POOR VISION
         Rhinos’ eyesight isn’t great – they’re unable to see a motionless person
